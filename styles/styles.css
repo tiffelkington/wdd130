@@ -14,7 +14,6 @@ h1 {
 }
 
 main img {
-  max-width: 400px;
   width: 150px;
   height: auto;
   border: 1px solid black;
@@ -28,7 +27,7 @@ p {
 
 aside {
   width: 20em;
-  margin: 1rem; 
+  margin: 1rem;
   border: 1px solid rgba(0 0 0 /0.2);
   padding: 1em;
   background-color: brown;
