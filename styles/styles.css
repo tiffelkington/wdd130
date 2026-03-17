@@ -14,7 +14,8 @@ h1 {
 }
 
 main img {
-  width: 150 px;
+  max-width: 400px;
+  width: 150px;
   height: auto;
   border: 1px solid black;
   padding: 2px;
@@ -22,7 +23,7 @@ main img {
 }
 
 p {
-  padding: 0 px;
+  padding: 0px;
 }
 
 aside {
