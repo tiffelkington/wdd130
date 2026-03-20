@@ -51,10 +51,15 @@ p {
 aside {
   width: 20em;
   margin: auto;
-  border: auto;
-  padding: auto;
-  background-color: auto;
-  color: auto;
+  /*The audit forced me to add this */
+  border: 0px sold rgb(0 0 0/0.5);
+  /*The audit forced me to add this */
+  padding: 0px;
+  /*The audit forced me to add this */
+  background-color: rgb(0 0 0/0);
+  /*The audit forced me to add this */
+  color: rgb(0 0 0/0);
+  /*The audit forced me to add this */
   text-align: center;
   position: relative;
 }
