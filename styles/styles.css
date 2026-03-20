@@ -9,7 +9,7 @@
 }
 
 body {
-  font-size:  16px;
+  font-size: 16px;
   font-family: Roberto, Arial, sans-serif;
 }
 
@@ -50,6 +50,11 @@ p {
 
 aside {
   width: 20em;
+  margin: auto;
+  border: auto;
+  padding: auto;
+  background-color: auto;
+  color: auto;
   text-align: center;
   position: relative;
 }
