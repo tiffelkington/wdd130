@@ -137,10 +137,9 @@ footer p {
   height: 145px;
   width: 96%;
   padding: 8px;
-  text-align: center;
   opacity: 0.80;
   background-color: var(--accent1-color);
-  color: #fff;
+  color: var(--accent2-color);
   text-align: left;
 }
 
