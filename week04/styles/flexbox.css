@@ -1,32 +1,35 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 1rem;
 }
 
 .flex-container {
-    border: 3px dashed darkcyan;
-    background-color: lightyellow;
-    display: flex;
-    flex-wrap: wrap;
+  border: 3px dashed darkcyan;
+  background-color: lightyellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .flex-item {
-    width: 250px;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 20%);
-    padding: 0.5rem;
-    background-color: #bbb;
-    color: #333;
+  width: 250px;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 20%);
+  padding: 0.5rem;
+  background-color: #bbb;
+  color: #333;
 }
 
 .item1 {
-    min-height: 100px;
+  min-height: 100px;
 }
 
 .item2 {
-    min-height: 200px;
+  min-height: 200px;
 }
 
 .item3 {
-    min-height: 300px;
+  min-height: 300px;
 }

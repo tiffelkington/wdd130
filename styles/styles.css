@@ -8,20 +8,34 @@
   box-sizing: border-box;
 }
 
+header,
+.grid,
+footer {
+  max-width: 840px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 body {
   font-size: 16px;
-  font-family: Roberto, Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 nav {
   background-color: darkblue;
-  padding: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav a {
-  color: white;
   display: block;
-  padding: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
 }
 
 h1 {
@@ -30,17 +44,23 @@ h1 {
 }
 
 main {
-  max-width: 640px;
+  margin: 1rem;
+  grid-column: 2;
+}
+
+main h1 {
+  border-bottom-style: solid;
+  border-bottom-color: rgb(0 0 0/0.9) padding: 0px 0px 2px 0px;
 }
 
 main img {
   width: 150px;
   height: auto;
   border: 1px solid steelblue;
-  padding: 2px;
+  padding: 10px;
   box-shadow: 0 0 30px gray;
   float: right;
-  margin: 0 0 1rem 1rem;
+  margin: 2rem 0 1rem 1rem;
 }
 
 p {
@@ -62,6 +82,8 @@ aside {
   /*The audit forced me to add this */
   text-align: center;
   position: relative;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 aside img {
@@ -96,4 +118,9 @@ footer {
 
 .no-wrap {
   white-space: nowrap;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
 }
