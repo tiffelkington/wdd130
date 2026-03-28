@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgb(235, 205, 39);
   /*rgb(26, 26, 97); */
-  --secondary-color: rgb(85, 67, 67);
+  --secondary-color: rgb(145, 75, 9);
   --accent1-color: #1c5664;
   --accent2-color: #F7F6E5;
   --heading-font: "Times New Roman", "Georgia", serif;
@@ -19,11 +19,35 @@ body {
   color: var(--accent1-color);
 }
 
+header {
+  display: grid;
+  grid-template-columns: 100px 740px;
+  align-items: center;
+}
+
 header,
 main,
 footer {
   width: 840px;
   margin: 0 auto;
+}
+
+header nav ul {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  font-style: oblique;
+  font-weight: 700;
 }
 
 h1,
@@ -62,14 +86,35 @@ section h2 {
   text-align: center;
 }
 
+section div {
+  margin: 0px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section div img {
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  align-items: center;
+}
+
 footer img {
   width: 60px;
   height: auto;
   padding: 0px 20px 0px 0px;
+  justify-content: space-evenly;
 }
 
 footer p {
   color: var(--secondary-color);
+  text-align: center;
 }
 
 .logo {
@@ -106,6 +151,23 @@ footer p {
 .hero article img {
   float: right;
   width: 125px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-items: start;
+}
+
+.image-gallery figure figcaption {
+  text-align: center;
+  font-size: .8rem;
+}
+
+.image-gallery img {
+  max-width: 145px;
 }
 
 .socialmedia a {
