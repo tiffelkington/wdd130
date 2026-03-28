@@ -9,14 +9,9 @@
 }
 
 header,
-.grid,
 footer {
   max-width: 840px;
   margin: 0 auto;
-}
-
-header,
-footer {
   text-align: center;
 }
 
@@ -123,4 +118,6 @@ footer {
 .grid {
   display: grid;
   align-items: center;
+  max-width: 840px;
+  margin: 0 auto;
 }
