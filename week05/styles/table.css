@@ -1,0 +1,55 @@
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  text-align: center;
+}
+
+thead th,
+tfoot tr {
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+}
+
+/*table {
+  border-spacing: separate;
+  border-collapse: collapse;
+  caption-side: bottom;
+  border-width: .2em;
+
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  border: 2px solid rgb(140 140 140);
+
+}
+
+thead {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+th,
+td {
+  border-width: .2px;
+  border-style: solid;
+  padding: 15px;
+}
+
+td thead th,
+tfoot tr {}
+
+tfoot {
+  background-color: black;
+  color: white;
+}
