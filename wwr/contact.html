@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-5">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 
 <body>
   <header> <!-- #5 header has a logo and nav element with 4 a tags -->
-    <img class=logo src="images/logo.png" alt="Rapid Decisions logo with wave and rafters">
+    <img class="logo" src="images/logo.png" alt="Rapid Decisions logo with wave and rafters">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -24,7 +24,7 @@
     </nav>
   </header>
 
-  <main> <!-- #6 main with a div, section, and section -->
+  <main>
     <div class="address">
       <h2>Rapid Decisions</h2>
       <p>9105 Crimson Clover Way</p>
@@ -32,39 +32,43 @@
       <p>775-388-7035</p>
       <p>info@rapiddecisions.com</p>
     </div>
+
     <div class="map_form">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6438.982285330575!2d-115.29587198839207!3d36.203255501006275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c89550d192bf63%3A0x16fba376f9ad0888!2s9105%20Crimson%20Clover%20Way%2C%20Las%20Vegas%2C%20NV%2089134!5e0!3m2!1sen!2sus!4v1775534275407!5m2!1sen!2sus"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="map_form">
       <form>
         <div class="form-item column2">
           <label>Name <input type="text" name="fullname" placeholder="  Placeholder" required></label>
-          <label>Email <input type="email" name="useremail" placeholder="  Placeholder"
-              required></label>
+          <label>Email <input type="email" name="useremail" placeholder="  Placeholder" required></label>
           <div class="form-item2">
             <p class="message-purpose">Message Purpose</p>
             <div class="radio-buttons">
-              <label><input type="radio" name="purpose"> General Inquiry</label>
-              <label><input type="radio" name="purpose"> Reservation Question</label>
-              <label><input type="radio" name="purpose"> Website Suggestion</label>
+              <label><input type="radio" id="inquiry" name="purpose"> General Inquiry</label>
+              <label><input type="radio" id="reservation" name="purpose"> Reservation Question</label>
+              <label><input type="radio" id="website" name="purpose"> Website Suggestion</label>
             </div>
           </div>
         </div>
-        <div class= "column1">
+
+        <div class="column1">
           <label for="message">Message</label>
         </div>
         <div class="form-item2">
           <textarea id="message" name="message" rows="4" placeholder="Type here"></textarea>
         </div>
+
         <div class="checkbox">
           <input type="checkbox" id="newsletter" name="newsletter">
           <label for="newsletter" class="newsletterspace">Please subscribe me to the monthly
             newsletter</label>
         </div>
+
         <button type="submit" class="buttonspace">Get in Touch!</button>
+
       </form>
     </div>
+
     <section> <!--section with and h2 element -->
       <h2>We Are Here to Serve You</h2>
       <div class="image-gallery">
@@ -86,7 +90,7 @@
         </figure>
         <figure>
           <img src="images/employee-5.jpg" alt="Sean, a tour guide on raft">
-          <figcaption>Kris Smith<figcaption>
+          <figcaption>Kris Smith</figcaption>
         </figure>
       </div>
     </section>
@@ -96,10 +100,8 @@
     <p>&copy; 2026 &#10070; Rapid Decisions &#10070; Tiffany Elkington &#10070;</p>
     <nav class="socialmedia">
       <a href="https://tiktok.com"><img src="images/tiktok_small.svg" alt="tiktok icon"></a>
-      <a href="https://youtube.com"><img src="images/youtube_small.svg"
-          alt="red with arrow youtube icon"></a>
-      <a href="https://instagram.com"><img src="images/instagram_small.svg"
-          alt="instagram icon"></a>
+      <a href="https://youtube.com"><img src="images/youtube_small.svg" alt="red with arrow youtube icon"></a>
+      <a href="https://instagram.com"><img src="images/instagram_small.svg" alt="instagram icon"></a>
     </nav>
   </footer>
 </body>

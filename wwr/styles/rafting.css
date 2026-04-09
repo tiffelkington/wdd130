@@ -124,7 +124,6 @@ section h2 {
 }
 
 section {
-  background-color: var(--accent3-color);
   width: 800px;
 }
 
@@ -250,7 +249,6 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  text-justify: left;
   margin-top: 15px;
 }
 
@@ -316,9 +314,7 @@ textarea {
 .hero article img {
   float: right;
   width: 125px;
-}"
-
-
+}
 
 .image-gallery {
   display: flex;
