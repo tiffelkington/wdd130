@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Rapid Decisions</title>
+  <meta name="description"
+    content="Contact Rapid Decisions, proud provider of professional rafting guides and exciting tours">
+  <meta name="author" content="Tiffany Elkington">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <div class="map_form">
+    <form>
+      <div class="form-item column2">
+        <label>Name <input type="text" name="fullname" placeholder="  Placeholder" required></label>
+        <label>Email <input type="email" name="useremail" placeholder="  Placeholder"
+            required></label>
+        <div class="form-item2">
+          <p>Message Purpose</p>
+          <div class="radio-buttons">
+            <label><input type="radio" name="purpose"> General Inquiry</label>
+            <label><input type="radio" name="purpose"> Reservation Question</label>
+            <label><input type="radio" name="purpose"> Website Suggestion</label>
+          </div>
+        </div>
+      </div>
+      <div class= "column1">
+        <label for="message">Message</label>
+      </div>
+      <div class="form-item2">
+        <textarea id="message" name="message" rows="4" placeholder="Type here"></textarea>
+      </div>
+      <div>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter" class="newsletterspace">Please subscribe me to the monthly
+          newsletter</label>
+      </div>
+      <button type="submit" class="buttonspace">Get in Touch!</button>
+    </form>
+  </div>
+</body>
+</html>
