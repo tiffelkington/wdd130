@@ -527,3 +527,43 @@ textarea {
 .socialmedia a {
   text-decoration: none;
 }
+
+/* TABLE */
+.rafting-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+.rafting-table th,
+.rafting-table td {
+  border: 1px solid var(--accent1-color);
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.rafting-table thead {
+  background-color: var(--secondary-color);
+  color: var(--accent4-color);
+}
+
+.rafting-table tbody {
+  background-color: var(--accent2-color);
+}
+
+.rafting-table th {
+  font-size: 1.1em;
+}
+
+.rafting-table td {
+  font-size: 1em;
+}
+
+.table-title th {
+  background-color: var(--accent1-color);
+  color: var(--accent4-color);
+  text-align: center;
+  font-size: 1.2em;
+  padding: 14px;
+}
