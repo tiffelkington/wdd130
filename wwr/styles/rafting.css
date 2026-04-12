@@ -9,6 +9,7 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* UNIVERSAL */
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,42 @@ body {
   color: var(--accent1-color);
 }
 
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav,
+p,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+form label,
+input,
+button,
+select,
+textarea {
+  font-family: Roberto, Arial, sans-serif;
+}
+
+form input,
+select,
+textarea {
+  padding: 5px;
+  font-size: .8rem;
+}
+
+/* HEADER AND NAV */
 header {
   display: grid;
   grid-template-columns: 100px 740px;
@@ -27,13 +64,6 @@ header {
   background-color: var(--accent3-color);
   padding: 5px;
   border-bottom: 5px;
-}
-
-header,
-main,
-footer {
-  width: 840px;
-  margin: 0 auto;
 }
 
 header nav ul {
@@ -53,25 +83,14 @@ header nav ul a {
   font-weight: 700;
 }
 
-h1,
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-nav,
-p,
-article {
-  margin: 16px;
-  padding: 8px;
-}
-
+/* SECTION SPECIFIC AND HEADINGS*/
 section {
   margin: 16px 0px 16px 0px;
   padding: 8px 0px 8px 0px;
   width: 840px;
 }
 
+/* #3 REQUIREMENT FOR INDEX PAGE */
 h1 {
   position: absolute;
   top: 0px;
@@ -83,44 +102,33 @@ h1 {
   color: var(--accent2-color);
 }
 
-form {
-  width: 420px;
-  margin: 0 auto;
-  display: grid;
-  gap: 15px;
-  margin-left: 10px;
-}
-
-form label,
-input,
-button,
-select,
-textarea {
-  font-family: Roberto, Arial, sans-serif;
-}
-
-
-form input,
-select,
-textarea {
-  padding: 5px;
-  font-size: .8rem;
-}
-
-
-fieldset {
-  display: grid;
-  gap: .5rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 /0.2);
-  padding: 1rem;
-}
-
 section h2 {
   background-color: var(--accent1-color);
   height: 40px;
   padding: 8px;
   text-align: center;
+}
+
+h1.index-heading {
+  width: 100%;
+  padding: 5px 16px 0px 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: white;
+  color: var(--accent1-color);
+  font-family: var(--heading-font);
+  font-size: 4rem;
+}
+
+h1.contact-header {
+  position: static;
+  width: 100%;
+  padding: 5px 16px 0px 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: white;
+  color: var(--accent1-color);
+  font-family: var(--heading-font);
 }
 
 section div {
@@ -136,10 +144,31 @@ section div img {
   height: auto;
 }
 
+section a {
+  display: flex;
+  justify-content: center;
+}
+
+section a img {
+  display: grid;
+}
+
+/* FORM SPECIFIC */
+form {
+  width: 420px;
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+  margin-left: 10px;
+}
+
+/* FOOTER SPECIFIC */
+
 footer {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   align-items: center;
+  background-color: var(--accent3-color);
 }
 
 footer img {
@@ -154,21 +183,25 @@ footer p {
   text-align: center;
 }
 
+/* CLASS SPECIFIC */
+
+/* CLASS RELATED TO HEADER AND NAV */
 .logo {
   width: 125px;
   padding-left: 4px;
 }
 
-h1.contact-header {
-  position: static;
-  width: 100%;
-  padding: 5px 16px 0px 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: white;
+/* CLASS RELATED TO SECTIONS AND SECTION PARTS */
+
+/* CLASS RELATED TO HEADINGS IN SECTIONS*/
+.plain-header2 {
+  padding: 65px 8px 8px 8px;
+  font-size: 2rem;
   color: var(--accent1-color);
-  font-family: var(--heading-font); 
+  background-color: white;
 }
+
+/* CLASS RELATED TO ALIGNMENT AND POSITIONING IN SECTIONS */
 
 .address {
   text-align: center;
@@ -186,6 +219,182 @@ h1.contact-header {
   font-size: .9rem;
 }
 
+.column1 {
+  margin-left: 5px;
+  justify-content: left;
+  height: 0px;
+}
+
+.column2 {
+  justify-content: right;
+}
+
+.hero {
+  position: relative;
+}
+
+/* #3 REQUIREMENT FOR INDEX PAGE */
+.hero img {
+  width: 100%;
+  height: 100;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  bottom: 0px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 0px;
+  height: 155px;
+  width: 96%;
+  padding: 3px 0px 0px;
+  opacity: 0.70;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  text-align: left;
+}
+
+.hero article p {
+  padding: 0px 15px 5px 5px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+}
+
+.hero figure {
+  position: absolute;
+  bottom: -10px;
+  align-items: flex-end;
+  height: auto;
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+  height: 155px;
+  width: 97%;
+  opacity: 0.80;
+  margin-bottom: 20px;
+}
+
+.trip-override {
+  display: block;
+  text-align: center;
+  padding: 0px;
+}
+
+.lower-heading {
+  padding-top: 50px;
+}
+
+.cta-button {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.cta-button img {
+  display: block;
+  width: 200px;
+}
+
+.cta-button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-items: start;
+}
+
+.image-gallery figure figcaption {
+  text-align: center;
+  font-size: .8rem;
+}
+
+.image-gallery img {
+  max-width: 145px;
+}
+
+.wide-width p,
+img {
+  position: grid;
+
+}
+
+/* #6 REQUIREMENT FOR INDEX PAGE CSS grid layout */
+.grid-2x1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.grid-2x1 img {
+  justify-content: center;
+}
+
+.box2 {
+  background-color: var(--accent2-color);
+  padding: 15px;
+  display: flex;
+  /* to center within the grid */
+  flex-direction: column;
+  align-items: center;
+}
+
+.box2 p {
+  text-align: left;
+}
+
+/* #3 REQUIREMENT FOR TRIPS PAGE */
+.grid-3x1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.grid-3x1 img {
+  justify-content: center;
+}
+
+.box3 {
+  background-color: var(--accent2-color);
+  padding: 15px;
+  /* to center within the grid */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box3 p {
+  text-align: left;
+}
+
+/* CLASS RELATED TO MAP AND POSITIONING IN SECTIONS */
 .map_form {
   display: grid;
   grid-template-columns: 400px 450px;
@@ -202,6 +411,7 @@ h1.contact-header {
   gap: 20px;
 }
 
+/* CLASS RELATED TO FORMS AND POSITIONING IN SECTIONS */
 .form-item {
   display: grid;
   align-items: start;
@@ -223,7 +433,8 @@ label {
   margin: 0px 0px 0px 0px;
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"],
+input[type="email"] {
   width: 80%;
   height: 30px;
   margin: 20px 42px 0px 0px;
@@ -272,7 +483,6 @@ textarea {
 }
 
 .buttonspace {
-  display: block;
   text-align: center;
   justify-items: center;
   width: 33%;
@@ -280,63 +490,38 @@ textarea {
   height: 25px;
 }
 
-.column1 {
-  margin-left: 5px;
-  justify-content: left;
-  height: 0px;
+# NEWSLETTER .newsletter-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
 }
 
-.column2 {
+.index-form {
+  padding: 0px;
+  margins: 0px;
+  width: 100%;
+  gap: 0px;
+}
+
+.form-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 3fr auto 3fr;
+  align-items: center;
+  gap: 10px;
   justify-content: right;
 }
 
-.hero {
-  position: relative;
-}
-
-.hero img {
-  display: block;
+.form-row input {
   width: 100%;
-  height: auto;
+  height: 35px;
+  margin: 0px;
+  padding: 5px 8px;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 0px;
-  height: 155px;
-  width: 97%;
-  padding: 3px 0px 8px;
-  opacity: 0.70;
-  background-color: var(--accent1-color);
-  color: var(--accent2-color);
-  text-align: left;
-}
-
-.hero article p {
-  padding: 0px 15px 5px 5px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-}
-
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  justify-content: center;
-  align-items: start;
-}
-
-.image-gallery figure figcaption {
-  text-align: center;
-  font-size: .8rem;
-}
-
-.image-gallery img {
-  max-width: 145px;
-}
+/* CLASS RELATED TO FOOTER */
 
 .socialmedia a {
   text-decoration: none;
