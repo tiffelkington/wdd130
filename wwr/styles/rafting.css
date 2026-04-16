@@ -340,8 +340,8 @@ footer nav {
 }
 
 .contact-header {
- top: 50%;
- transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .inset {
@@ -431,6 +431,11 @@ img {
 
 .box2 p {
   text-align: left;
+}
+
+.box2 img {
+  height: 300px;
+  width: auto;
 }
 
 /* #3 REQUIREMENT FOR TRIPS PAGE */
