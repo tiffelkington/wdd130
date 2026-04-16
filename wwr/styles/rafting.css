@@ -245,9 +245,6 @@ footer nav {
 .hero {
   position: relative;
   width: 100%;
-}
-
-.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
