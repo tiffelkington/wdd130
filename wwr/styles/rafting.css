@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(235, 205, 39);
+  --primary-color: rgb(241, 233, 188);
   /*rgb(26, 26, 97); */
   --secondary-color: rgb(84, 44, 6);
   --accent1-color: #123943;
@@ -50,7 +50,7 @@ input,
 button,
 select,
 textarea {
-  font-family: Roberto, Arial, sans-serif;
+  font-family: var(--body-font);
 }
 
 form input,
@@ -83,7 +83,7 @@ header nav ul {
 header nav ul a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--heading-font);
   font-size: 1.2em;
   font-style: oblique;
   font-weight: 700;
@@ -265,9 +265,12 @@ footer nav {
 
 .hero article {
   position: absolute;
-  bottom: 0px;
   min-height: 155px;
-  width: 96%;
+  width: 90%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
   padding: 3px 0px 0px;
   opacity: 0.85;
   background-color: var(--accent1-color);
@@ -338,10 +341,6 @@ footer nav {
 .contact-header {
  top: 50%;
  transform: translateY(-50%);
-}
-
-.hero.inset h1 {
-  top: 2%;
 }
 
 .inset {
@@ -598,7 +597,7 @@ textarea {
 .rafting-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
+  font-family: var(--body-font)
   margin: 20px 0;
 }
 
