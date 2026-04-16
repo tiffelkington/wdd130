@@ -146,7 +146,7 @@ section div {
 }
 
 section div img {
-  width: 200px;
+  width: 300px;
   height: auto;
 }
 
@@ -605,7 +605,7 @@ textarea {
 .rafting-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: var(--body-font)
+  font-family: var(--body-font);
   margin: 20px 0;
 }
 
@@ -614,6 +614,16 @@ textarea {
   border: 1px solid var(--accent1-color);
   padding: 12px 16px;
   text-align: left;
+}
+
+.rafting-table td:nth-child(2),
+.rafting-table th:nth-child(2) {
+  text-align: center;
+}
+
+.rafting-table td:nth-child(3),
+.rafting-table th:nth-child(3) {
+  text-align: center;
 }
 
 .rafting-table thead {
