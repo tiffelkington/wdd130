@@ -38,9 +38,7 @@ h2 {
   color: var(--primary-color);
 }
 
-nav,
-p,
-article {
+section p {
   margin: 16px;
   padding: 8px;
 }
@@ -70,7 +68,7 @@ header {
 }
 
 header nav ul {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -256,13 +254,13 @@ footer nav {
 
 .hero article {
   position: absolute;
-  min-height: 155px;
-  width: 90%;
+  min-height: 100px;
+  width: 98%;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin: auto;
-  padding: 3px 0px 0px;
+  padding: 3px 0px 15px;
   opacity: 0.85;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
@@ -287,17 +285,17 @@ footer nav {
 }
 
 .hero article p {
-  padding: 0px 15px 5px 5px;
+  padding: 0px 10px 5px 15px;
 }
 
 .hero article img {
   float: right;
   width: 25%;
   max-width: 125px;
-  min-width: 90px;
+  min-width: 100px;
   height: auto;
-  margin: 10px;
-  padding: 6px;
+  margin: 0px 8px;
+  padding: 0px 6px;
 }
 
 .hero figure {
@@ -313,13 +311,13 @@ footer nav {
 
 .hero-buttons {
   position: absolute;
-  bottom: 35%;
-  left: 20%;
+  bottom: 44%;
+  left: 15%;
   transform: translateX(-50%);
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .hero-buttons.trip-specific {
